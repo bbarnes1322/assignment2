@@ -1,0 +1,68 @@
+Bradley Mason Barnes
+Assignment 3 Git and Object-Oriented Programming Warm Up
+COP 4020
+Date: 3/4/2026 
+Repository link: https://github.com/bbarnes1322/assignment2
+
+1) Console output from step 3.C
+warning: in the working copy of 'docs/status.txt', LF will be replaced by CRLF the next time Git touches it
+[master 66a785c] Update status output file
+ 1 file changed, 1 insertion(+)
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 400 bytes | 400.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/bbarnes1322/assignment2.git
+   eed0ae1..66a785c  master -> master
+
+mason@MasonsComp MINGW64 /c/Users/Mason/OneDrive/Desktop/assignment2 (master)
+
+2) How many commits have been done to the repository (anyone)?
+Commit count: 10
+Command used: git rev-list --count --all
+
+3) When was README.md modified last?
+Output:
+commit 68066140f9d8e26b6d9b579e0874da84d7ddb0f4
+Author: bbarnes1322 <mason.barnes1121@gmail.com>
+Date:   Wed Mar 4 12:53:50 2026 -0600
+
+    Add repository owner information to README
+
+mason@MasonsComp MINGW64 /c/Users/Mason/OneDrive/Desktop/assignment2 (master)
+
+Command used: git log -1 -- README.md
+
+4) Two reasons why branches are used
+Branches let you work on new features/bug fixes without breaking the main branch.
+Branches allow parallel work by multiple people and make merging/review easier.
+
+5) Difference between git log and git status
+git status shows the current state of your working directory and staging area (modified/staged/untracked files).
+git log shows the commit history (past commits with messages, authors, and dates).
+
+6) Command to see commits where Vehicle.h was one of the committed files
+git log -- Vehicle.h
+
+7) Command to see commits whose message contains the word "file"
+git log --grep="file"
+
+8) OOP Concepts
+(I) Inheritance: A derived class inherits fields/methods from a base class and can extend or override behavior.
+(II) Polymorphism: The same function call/interface can behave differently depending on the actual object type like virtual method overriding.
+(III) Encapsulation: Hiding internal data and requiring interaction through class methods, private data + public methods.
+
+9) What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+
+The Integration Manager workflow allows developers to push their work to their own public repositories and then submit it to a central repository. An integration manager reviews the changes and merges them into the main project.
+
+In the Dictator and Lieutenants workflow, only one main maintainer, the dictator, can push changes to the central repository. Lieutenants manage groups of developers and review their changes before passing them to the dictator. This spreads the responsibility across multiple people instead of everything going through one manager.
+
+10) How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow?
+
+With a team of 100 developers, a centralized workflow could cause many conflicts because everyone would be pushing changes directly to the same repository. This could slow down development and make it harder to manage changes.
+
+The Dictator and Lieutenants workflow helps organize the team by having developers submit their work to lieutenants first. The lieutenants review and combine the changes before sending them to the main maintainer. This reduces conflicts and makes it easier for large teams to manage their work.
