@@ -2,6 +2,12 @@ Bradley Mason Barnes
 Assignment 3 Git and Object-Oriented Programming Warm Up
 COP 4020
 Date: 3/4/2026 
+Tutorial Dates
+Learn Git Branching: March 4, 2026
+Visualizing Git tutorial: March 4, 2026
+try.github.io Git tutorials: March 4, 2026
+GitHub Account Setup Date
+January 2026
 Repository link: https://github.com/bbarnes1322/assignment2
 
 1) Console output from step 3.C
